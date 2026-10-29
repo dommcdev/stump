@@ -4,11 +4,15 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "poc": "bun run src/poc.tsx",
+    "bench:ui": "bun run scripts/bench-ui.tsx",
+    "bench:git": "bun run scripts/bench-git.ts",
     "dev": "bun run --watch src/index.tsx",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@types/bun": "1.3.14",
+    "@types/react": "^19.3.0",
     "typescript": "^5.9.3"
   },
   "dependencies": {
